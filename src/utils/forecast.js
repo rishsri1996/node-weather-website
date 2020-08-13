@@ -10,7 +10,7 @@ const request= require('request')
             callback('Unable to find location',undefined);
         else
          {
-             callback(undefined,'It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.')  //response.body.current.temp destructuted to body.current .temp
+             callback(undefined,'It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.'+'Humitdity is'+ body.current.humidity)  //response.body.current.temp destructuted to body.current .temp
          }
         })
         
